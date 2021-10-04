@@ -1,0 +1,54 @@
+<span class="mb-3">
+  <input type="text" [(ngModel)]="eventName" placeholder="Enter event name " aria-label="Recipient's username"
+    aria-describedby="button-addon2">
+  <!-- <button class="btn btn-outline-secondary" type="button" (click)="clear()">Clear</button> -->
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="searchEventName()">Search</button>
+</span>
+<span class="info"> OR </span>
+<span> Filter By Date </span>
+<select class="form-select form-select-sm" [(ngModel)]="selectedDate" aria-label=".form-select-sm example"
+  (change)="onDateChange()">
+  <option selected ngValue="Select">Select</option>
+  <option *ngFor="let obj of uniqueDates" [ngValue]="obj">{{obj}}</option>
+</select>
+<span class="info"> OR </span>
+<span>Filter By Category</span>
+<select class="form-select form-select-sm" [(ngModel)]="selectedCategory" aria-label=".form-select-sm example"
+  (change)="oncategoryChange()">
+  <option selected ngValue="Select">Select</option>
+  <option *ngFor="let obj of categories" [ngValue]="obj">{{obj}}</option>
+</select>
+<!-- <button type="button" (click)="clear()" class="btn btn-primary">Clear Filters</button> -->
+<span class="info"> OR </span>
+<span>Sort By Date</span>
+<select class="form-select form-select-sm" [(ngModel)]="byDate" aria-label=".form-select-sm example"
+  (change)="sortDate()">
+  <option selected ngValue="Select">Select</option>
+  <option ngValue="Latest">Latest</option>
+  <option ngValue="Oldest">Oldest</option>
+</select>
+<span class="info"> OR </span>
+<span>Sort By Name</span>
+<select class="form-select form-select-sm" [(ngModel)]="byName" aria-label=".form-select-sm example"
+  (change)="sortName()">
+  <option selected ngValue="Select">Select</option>
+  <option ngValue="AtoZ">A-Z</option>
+  <option ngValue="ZtoA">Z-A</option>
+</select>
+
+
+<button type="button" (click)="callSubscribe()" class="btn btn-success subevent">Subscribe to Event</button>
+
+
+<div *ngFor="let obj of showEvents">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title name">{{obj.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{obj.category}}</h6>
+      <p class="card-text">{{obj.eventDate | date: 'dd-MM-yyyy'}}</p>
+      <p class="card-text">{{obj.description}}</p>
+      <span class="subscrptn" *ngIf="obj.subscribed">Subscribed</span>
+
+    </div>
+  </div>
+</div>

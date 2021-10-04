@@ -1,0 +1,52 @@
+{
+  "events": [{
+          "id": "MAR2021032510",
+          "name": "Marcomware introduction",
+          "description": "Marcomware empowers your marketing organization. Join this meeting to get more information about Marcomware.",
+          "category": "Marcomware",
+          "eventDate": "2021-03-25T10:00:00+0100"
+      },
+      {
+          "id": "RET2021032513",
+          "name": "Retailware introduction",
+          "description": "Local markets and even regional stores may have slightly different requirements to support their sales! With Retailware, we offer brands one online platform to share marketing guidelines and centrally developed materials. Join this meeting to get more information about Retailware.",
+          "category": "Retailware",
+          "eventDate": "2021-03-25T13:00:00+0100"
+      },
+      {
+          "id": "MAR2021040110",
+          "name": "Marcomware workshop",
+          "description": "Marcomware empowers your marketing organization. Join this meeting to get more information about Marcomware.",
+          "category": "Marcomware",
+          "eventDate": "2021-04-01T10:00:00+0100"
+      },
+      {
+          "id": "RET2021040810",
+          "name": "Retailware",
+          "description": "Local markets and even regional stores may have slightly different requirements to support their sales! With Retailware, we offer brands one online platform to share marketing guidelines and centrally developed materials. Join this meeting to get more information about Retailware.",
+          "category": "Retailware",
+          "eventDate": "2021-04-08T10:00:00+0100"
+      },
+      {
+          "id": "PHO2021040810",
+          "name": "Phomas introduction",
+          "description": "Phomas is the online photography management platform. Join this meeting to get more information about Phomas.",
+          "category": "Phomas",
+          "eventDate": "2021-04-08T10:00:00+0100"
+      },
+      {
+          "id": "PHO2021040813",
+          "name": "Phomas introduction",
+          "description": "Phomas is the online photography management platform. Join this meeting to get more information about Phomas.",
+          "category": "Phomas",
+          "eventDate": "2021-04-08T13:00:00+0100"
+      },
+      {
+          "id": "MAR2021040813",
+          "name": "Marcomware introduction",
+          "description": "Marcomware empowers your marketing organization. Join this meeting to get more information about Marcomware.",
+          "category": "Marcomware",
+          "eventDate": "2021-04-08T13:00:00+0100"
+      }
+  ]
+}
